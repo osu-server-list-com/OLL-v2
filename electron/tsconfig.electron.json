@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "outDir": "../dist-electron/main",
+    "rootDir": "./main",
+    "strict": true,
+    "noEmit": false,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["../node_modules/*"]
+    }
+  },
+  "include": [
+    "main/**/*.ts",
+    "main/**/*.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "../vite.config.ts"
+  ]
+} 

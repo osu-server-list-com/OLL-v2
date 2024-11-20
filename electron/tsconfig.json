@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "outDir": "../dist-electron",
+    "rootDir": "../",  // Изменено чтобы включить родительскую директорию
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "noEmit": false,
+    "baseUrl": "../",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": [
+    "./**/*.ts",
+    "../src/**/*.ts"  // Добавляем все typescript файлы из src
+  ]
+}

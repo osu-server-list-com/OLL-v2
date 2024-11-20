@@ -1,0 +1,75 @@
+{
+  "name": "osl",
+  "productName": "OSL",
+  "version": "1.0.0",
+  "description": "OSU Server List Launcher",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "start": "tsc -p tsconfig.electron.json && concurrently \"vite --port 5173 --host\" \"wait-on tcp:5173 && electron .\"",
+    "electron:build": "tsc -p tsconfig.electron.json && vite build && electron-builder",
+    "electron:preview": "electron .",
+    "release": "npm run build && electron-builder"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "electron-updater": "^6.3.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@vitejs/plugin-react": "^4.2.0",
+    "autoprefixer": "^10.4.16",
+    "concurrently": "^8.2.2",
+    "electron": "^27.1.0",
+    "electron-builder": "^24.6.4",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0",
+    "vite-plugin-electron": "^0.15.5",
+    "vite-plugin-electron-renderer": "^0.14.5",
+    "wait-on": "^7.2.0"
+  },
+  "build": {
+    "appId": "com.osl.app",
+    "productName": "OSL",
+    "directories": {
+      "output": "release/${version}"
+    },
+    "files": [
+      "dist/**/*",
+      "dist-electron/**/*",
+      "src/assets/images/icon.ico"
+    ],
+    "extraResources": [
+      {
+        "from": "src/assets",
+        "to": "assets"
+      }
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "src/assets/images/icon.ico"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": false,
+      "deleteAppDataOnUninstall": true,
+      "shortcutName": "OSL",
+      "uninstallDisplayName": "OSL",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "installerIcon": "src/assets/images/icon.ico",
+      "uninstallerIcon": "src/assets/images/icon.ico",
+      "installerHeaderIcon": "src/assets/images/icon.ico"
+    }
+  }
+}

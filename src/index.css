@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'Onest';
+  src: url('/fonts/Onest-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-bg: #0b0c0b;
+  --secondary-bg: #1a1a1a;
+  --border-color: #2a2a2a;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --accent-color: #6528F7;
+  --hover-bg: #252525;
+}
+
+.light {
+  --primary-bg: #ffffff;
+  --secondary-bg: #f5f5f5;
+  --border-color: #e5e5e5;
+  --text-primary: #000000;
+  --text-secondary: #666666;
+  --hover-bg: #eeeeee;
+}
+
+body {
+  margin: 0;
+  font-family: 'Onest', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-bg);
+  color: var(--text-primary);
+}
+
+.bg-primary {
+  background-color: var(--primary-bg);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-bg);
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.border-custom {
+  border-color: var(--border-color);
+}
+
+.hover-bg:hover {
+  background-color: var(--hover-bg);
+}
+
+.bottom-panel {
+  background-color: var(--secondary-bg);
+  border-color: var(--border-color);
+}
+
+/* Кастомный скроллбар */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--secondary-bg);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Анимации */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+/* Карточка сервера */
+.server-card {
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.server-card:hover {
+  border-color: var(--accent-color);
+}
+
+/* Предотвращение выделения текста */
+.no-select {
+  user-select: none;
+}
+
+/* Стили для перетаскивания окна */
+.titlebar-drag-region {
+  -webkit-app-region: drag;
+}
+
+.titlebar-button {
+  -webkit-app-region: no-drag;
+}
+
+/* Анимация для звезды */
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(20deg) scale(1.2);
+  }
+  50% {
+    transform: rotate(-15deg) scale(1.1);
+  }
+  75% {
+    transform: rotate(10deg) scale(1.05);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.animate-wiggle {
+  animation: wiggle 0.3s ease-in-out;
+}
+ 

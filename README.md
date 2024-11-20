@@ -3,24 +3,36 @@
 <div align="center">
   <img src="public/logo.png" alt="OSL Logo" width="150" height="150">
   <h3>A modern launcher for osu! private servers</h3>
+  <p>Simple, fast, and feature-rich launcher for managing and connecting to osu! private servers</p>
 </div>
 
 ## ✨ Features
 
 - **Server Management**
-  - Server voting system
+  - Real-time server status and player count
+  - Automatic server sorting by players or votes
   - Quick server switching
-  - Favorites system
+  - Favorites system with custom sorting
+  - Direct access to server pages and voting
 
-- **Statistics**
-  - Playtime tracking for each server
-  - Session tracking
-  - History of last 5 played servers
+- **Easy Setup**
+  - Automatic osu! path detection
+  - Manual path selection option
+  - Desktop shortcut creation
+  - Auto-launch configuration
+
+- **User Interface**
+  - Modern, clean design
+  - Dark/Light theme support
+  - Responsive and fluid animations
+  - Server status indicators
+  - Real-time updates
 
 - **Customization**
-  - Dark/Light theme
+  - Theme preferences
+  - Auto-close after launch option
   - Sorting preferences
-  - Auto-close option
+  - Favorites management
 
 - **Multilingual Support**
   - English
@@ -28,13 +40,27 @@
   - Japanese
   - Portuguese
 
-## 🛠️ Tech Stack
+## 🚀 Getting Started
 
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+- Git
+
+### Installation
+
+1. Clone the repository
+
+## 🛠️ Development
+
+### Tech Stack
 - Electron
 - React
 - TypeScript
 - Tailwind CSS
 - Vite
+
+### Building from Source
 
 ## 🚀 developer
 

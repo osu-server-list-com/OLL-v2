@@ -61,7 +61,3 @@
 - Vite
 
 ### Building from Source
-
-## 🚀 developer
-
-- Kyureno

@@ -102,6 +102,37 @@ body {
   animation: bounce 1s infinite;
 }
 
+@keyframes fade-in {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.18s cubic-bezier(0.4,0,0.2,1);
+}
+
+@keyframes splash-bounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.08);
+  }
+  40% {
+    transform: scale(0.96);
+  }
+  60% {
+    transform: scale(1.04);
+  }
+  80% {
+    transform: scale(0.98);
+  }
+}
+
+.animate-splash-bounce {
+  animation: splash-bounce 1.2s cubic-bezier(0.4,0,0.2,1) infinite;
+}
+
 /* Карточка сервера */
 .server-card {
   border-radius: 8px;
@@ -148,4 +179,3 @@ body {
 .animate-wiggle {
   animation: wiggle 0.3s ease-in-out;
 }
- 

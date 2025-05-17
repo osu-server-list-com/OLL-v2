@@ -8,6 +8,9 @@ import axios from 'axios'
 let mainWindow: BrowserWindow
 import type { Server } from '../src/types/Server'
 
+// Disable GPU hardware acceleration to fix blinking/loading and GPU errors
+app.disableHardwareAcceleration();
+
 // Добавляем функцию проверки стандартного пути
 async function checkDefaultOsuPath() {
   try {
@@ -278,4 +281,4 @@ app.on('activate', () => {
   if (BrowserWindow.getAllWindows().length === 0) {
     createWindow()
   }
-}) 
+})

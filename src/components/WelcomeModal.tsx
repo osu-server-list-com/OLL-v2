@@ -24,7 +24,6 @@ const WelcomeModal: React.FC<WelcomeModalProps> = ({ isOpen, onClose, onSelectPa
       const defaultPath = await window.electron.checkDefaultOsuPath();
       if (defaultPath) {
         localStorage.setItem('osuPath', defaultPath);
-        alert('Successfully found and set osu! path automatically!\nPath: ' + defaultPath);
         onClose();
       } else {
         console.log('Could not find osu! in default location. Please select manually.');

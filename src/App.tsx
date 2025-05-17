@@ -13,8 +13,8 @@ function SplashScreen({ visible }: { visible: boolean }) {
       className={`fixed inset-0 z-[9999] flex flex-col items-center justify-center transition-opacity duration-700 bg-[#0b0c0b] ${visible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
       style={{ transitionProperty: 'opacity' }}
     >
-      <img src={logoImage} alt="OSL Logo" className="w-32 h-32 mb-6 animate-splash-bounce" />
-      <h1 className="text-3xl font-bold text-white mb-2">OSL</h1>
+      <img src={logoImage} alt="OLL Logo" className="w-32 h-32 mb-6 animate-splash-bounce" />
+      <h1 className="text-3xl font-bold text-white mb-2">OLL</h1>
       <span className="text-lg text-gray-400">osu! Server List Launcher</span>
     </div>
   )
@@ -286,9 +286,9 @@ function AppContent() {
             theme === 'dark' ? 'bg-[#0b0c0b]' : 'bg-white'
           } border-r border-custom p-4`}>
             <div className="flex items-center mb-8">
-              <img src={logoImage} alt="OSL" className="w-12 h-12" />
+              <img src={logoImage} alt="OLL" className="w-12 h-12" />
               <div className="ml-3">
-                <h1 className="text-xl font-bold text-primary">OSL</h1>
+                <h1 className="text-xl font-bold text-primary">OLL</h1>
                 <p className="text-sm text-secondary">OsuListLauncher</p>
               </div>
             </div>

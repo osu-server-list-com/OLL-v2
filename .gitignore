@@ -38,3 +38,6 @@ pnpm-debug.log*
 
 # Electron
 out/
+
+# InnoSetup
+Output/

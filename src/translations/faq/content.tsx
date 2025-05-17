@@ -6,7 +6,7 @@ export const translations = {
         title: "Getting Started",
         content: (
           <div className="space-y-2">
-            <p>To start using OSL (OsuServerLauncher), follow these steps:</p>
+            <p>To start using OLL (OsuListLauncher), follow these steps:</p>
             <ol className="list-decimal list-inside space-y-2 ml-4">
               <li>Select your osu!.exe file using the button in the bottom panel</li>
               <li>Browse the available servers in the main window</li>
@@ -84,7 +84,7 @@ export const translations = {
         title: "How It Works",
         content: (
           <div className="space-y-2">
-            <p>OSL simplifies the process of connecting to different osu! private servers:</p>
+            <p>OLL simplifies the process of connecting to different osu! private servers:</p>
             <ol className="list-decimal list-inside space-y-2 ml-4">
               <li>The launcher fetches server information from osu-server-list.com</li>
               <li>When you select a server, it prepares the connection parameters</li>
@@ -144,7 +144,7 @@ export const translations = {
         title: "Начало работы",
         content: (
           <div className="space-y-2">
-            <p>Чтобы начать использовать OSL (OsuServerLauncher), выполните следующие шаги:</p>
+            <p>Чтобы начать использовать OLL (OsuListLauncher), выполните следующие шаги:</p>
             <ol className="list-decimal list-inside space-y-2 ml-4">
               <li>Выберите файл osu!.exe с помощью кнопки в нижней панели</li>
               <li>Просмотрите доступные серверы в главном окне</li>
@@ -222,7 +222,7 @@ export const translations = {
         title: "Как это работает",
         content: (
           <div className="space-y-2">
-            <p>OSL упрощает процесс подключения к разным приватным серверам osu!:</p>
+            <p>OLL упрощает процесс подключения к разным приватным серверам osu!:</p>
             <ol className="list-decimal list-inside space-y-2 ml-4">
               <li>Лаунчер получает информацию о серверах с osu-server-list.com</li>
               <li>При выборе сервера подготавливаются параметры подключения</li>
@@ -282,7 +282,7 @@ export const translations = {
         title: "はじめに",
         content: (
           <div className="space-y-2">
-            <p>OSL (OsuServerLauncher) の使用を開始するには、次の手順に従ってください：</p>
+            <p>OLL (OsuListLauncher) の使用を開始するには、次の手順に従ってください：</p>
             <ol className="list-decimal list-inside space-y-2 ml-4">
               <li>下部パネルのボタンを使用して osu!.exe ファイルを選択</li>
               <li>メインウィンドウで利用可能なサーバーを閲覧</li>
@@ -360,7 +360,7 @@ export const translations = {
         title: "動作方法",
         content: (
           <div className="space-y-2">
-            <p>OSL は異なる osu! プライベートサーバーに接続するプロセスを簡素化します：</p>
+            <p>OLL は異なる osu! プライベートサーバーに接続するプロセスを簡素化します：</p>
             <ol className="list-decimal list-inside space-y-2 ml-4">
               <li>ランチャーは osu-server-list.com からサーバー情報を取得します</li>
               <li>サーバーを選択すると、接続パラメータを準備します</li>
@@ -420,7 +420,7 @@ export const translations = {
         title: "Começando",
         content: (
           <div className="space-y-2">
-            <p>Para começar a usar o OSL (OsuServerLauncher), siga estes passos:</p>
+            <p>Para começar a usar o OLL (OsuListLauncher), siga estes passos:</p>
             <ol className="list-decimal list-inside space-y-2 ml-4">
               <li>Selecione seu arquivo osu!.exe usando o botão no painel inferior</li>
               <li>Navegue pelos servidores disponíveis na janela principal</li>
@@ -498,7 +498,7 @@ export const translations = {
         title: "Como Funciona",
         content: (
           <div className="space-y-2">
-            <p>O OSL simplifica o processo de conexão com diferentes servidores privados do osu!:</p>
+            <p>O OLL simplifica o processo de conexão com diferentes servidores privados do osu!:</p>
             <ol className="list-decimal list-inside space-y-2 ml-4">
               <li>O launcher obtém informações do servidor de osu-server-list.com</li>
               <li>Quando você seleciona um servidor, ele prepara os parâmetros de conexão</li>

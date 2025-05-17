@@ -57,9 +57,9 @@ const WelcomeModal: React.FC<WelcomeModalProps> = ({ isOpen, onClose, onSelectPa
         </div>
 
         <div className="flex flex-col items-center space-y-6 mt-4">
-          <img src={logoImage} alt="OSL" className="w-24 h-24 animate-bounce" />
+          <img src={logoImage} alt="OLL" className="w-24 h-24 animate-bounce" />
           <h1 className="text-3xl font-bold bg-gradient-to-r from-purple-500 to-accent bg-clip-text text-transparent">
-            Welcome to OSL!
+            Welcome to OLL!
           </h1>
           <p className="text-secondary max-w-md">
             To continue using the launcher, please select your osu! executable file.

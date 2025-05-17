@@ -1,8 +1,8 @@
 {
-  "name": "osl",
-  "productName": "OSL",
+  "name": "oll",
+  "productName": "OLL",
   "version": "1.0.0",
-  "description": "OSU Server List Launcher",
+  "description": "Osu List Launcher",
   "main": "dist-electron/main.js",
   "scripts": {
     "dev": "vite",
@@ -36,8 +36,8 @@
     "wait-on": "^7.2.0"
   },
   "build": {
-    "appId": "com.osl.app",
-    "productName": "OSL",
+    "appId": "com.OLL.app",
+    "productName": "OLL",
     "directories": {
       "output": "release/${version}"
     },
@@ -63,8 +63,8 @@
       "perMachine": false,
       "allowToChangeInstallationDirectory": false,
       "deleteAppDataOnUninstall": true,
-      "shortcutName": "OSL",
-      "uninstallDisplayName": "OSL",
+      "shortcutName": "OLL",
+      "uninstallDisplayName": "OLL",
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
       "installerIcon": "src/assets/images/icon.ico",

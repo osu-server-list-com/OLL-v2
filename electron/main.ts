@@ -142,7 +142,7 @@ function createWindow() {
     transparent: true,
     autoHideMenuBar: true,
     show: false,
-    title: 'OSL',
+    title: 'OLL',
     titleBarStyle: 'hidden',
     titleBarOverlay: false,
     fullscreenable: false,
@@ -157,7 +157,7 @@ function createWindow() {
   mainWindow.removeMenu()
 
   if (process.platform === 'win32') {
-    app.setAppUserModelId('com.osl.app')
+    app.setAppUserModelId('com.OLL.app')
     mainWindow.setThumbarButtons([])
     try {
       const iconPath = path.join(__dirname, '../src/assets/images/icon.ico')
@@ -169,7 +169,7 @@ function createWindow() {
     } catch (error) {
       console.error('Error setting window icon:', error)
     }
-    mainWindow.setTitle('OSL')
+    mainWindow.setTitle('OLL')
   }
 
   // Предотвращение открытия DevTools
@@ -260,13 +260,13 @@ ipcMain.handle('create-shortcut', async () => {
     if (process.platform === 'win32') {
       const desktopPath = path.join(os.homedir(), 'Desktop')
       const exePath = process.execPath
-      const shortcutPath = path.join(desktopPath, 'OSL.lnk')
+      const shortcutPath = path.join(desktopPath, 'OLL.lnk')
 
       await shell.writeShortcutLink(shortcutPath, {
         target: exePath,
-        description: 'OSL - osu! Server List Launcher',
+        description: 'OLL - osu! Server List Launcher',
         icon: path.join(__dirname, '../public/logo.ico'),
-        appUserModelId: 'com.osl.launcher'
+        appUserModelId: 'com.oll.launcher'
       })
 
       return true

@@ -1,7 +1,7 @@
-# OSL - OsuServerLauncher
+# OLL - OsuServerLauncher
 
 <div align="center">
-  <img src="public/logo.png" alt="OSL Logo" width="150" height="150">
+  <img src="public/logo.png" alt="OLL Logo" width="150" height="150">
   <h3>A modern launcher for osu! private servers</h3>
   <p>Simple, fast, and feature-rich launcher for managing and connecting to osu! private servers</p>
 </div>

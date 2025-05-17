@@ -8,6 +8,21 @@ import axios from 'axios'
 let mainWindow: BrowserWindow
 import type { Server } from '../src/types/Server'
 
+// Prevent multiple instances
+const gotTheLock = app.requestSingleInstanceLock();
+
+if (!gotTheLock) {
+  app.quit();
+  process.exit(0);
+} else {
+  app.on('second-instance', () => {
+    if (mainWindow) {
+      if (mainWindow.isMinimized()) mainWindow.restore();
+      mainWindow.focus();
+    }
+  });
+}
+
 // Disable GPU hardware acceleration to fix blinking/loading and GPU errors
 app.disableHardwareAcceleration();
 

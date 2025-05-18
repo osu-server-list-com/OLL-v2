@@ -11,8 +11,9 @@ declare global {
       createShortcut: () => Promise<boolean>;
       checkDefaultOsuPath: () => Promise<string | null>;
       getVersion: () => Promise<string>;
+      getServerList: () => Promise<any[]>;
     }
   }
 }
 
-export {}; 
+export {};

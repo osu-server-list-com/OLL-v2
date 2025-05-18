@@ -10,5 +10,6 @@ contextBridge.exposeInMainWorld('electron', {
   createShortcut: () => ipcRenderer.invoke('create-shortcut'),
   changeOsuPath: () => ipcRenderer.invoke('dialog:openFile'),
   checkDefaultOsuPath: () => ipcRenderer.invoke('check-default-osu-path'),
-  getVersion: () => ipcRenderer.invoke('get-version')
-}) 
+  getVersion: () => ipcRenderer.invoke('get-version'),
+  getServerList: () => ipcRenderer.invoke('get-server-list')
+})

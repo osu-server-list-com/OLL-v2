@@ -5,6 +5,7 @@ import fs from 'fs'
 import os from 'os'
 import { autoUpdater } from 'electron-updater'
 import axios from 'axios'
+import 'dotenv/config'
 let mainWindow: BrowserWindow
 import type { Server } from '../src/types/Server'
 
@@ -57,13 +58,18 @@ ipcMain.handle('check-default-osu-path', async () => {
 // Получение списка серверов
 async function getServerList(): Promise<Server[]> {
   try {
-    const response = await axios.get<Server[]>('https://osu-server-list.com/api/v2/client/servers?key=PfGLccr8pA5nOp1')
+    const response = await axios.get<Server[]>(`https://osu-server-list.com/api/v2/client/servers?key=${process.env.OSULISTAPI_KEY}`)
     return response.data
   } catch (error) {
     console.error('Error fetching server list:', error)
     return []
   }
 }
+
+// Добавляем обработчик IPC для получения списка серверов
+ipcMain.handle('get-server-list', async () => {
+  return await getServerList();
+});
 
 // Обработчик запуска osu!
 ipcMain.handle('launch-osu', async (event, osuPath: string, devserver: string) => {
